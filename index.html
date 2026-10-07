@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Riya ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#12000a,#3b001c,#12000a);
+    color:white;
+}
+
+/* PAGE */
+.page{
+    width:100vw;
+    height:100vh;
+    display:none;
+    position:relative;
+    overflow:hidden;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* FIRST PAGE */
+#page1{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.heart{
+    position:relative;
+    width:190px;
+    height:170px;
+    animation:heartbeat 1.2s infinite;
+    filter:drop-shadow(0 0 30px #ff174f);
+}
+
+.heart:before,
+.heart:after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:100px;
+    height:160px;
+    border-radius:100px 100px 0 0;
+    background:#ff174f;
+}
+
+.heart:before{
+    left:90px;
+    transform:rotate(45deg);
+    transform-origin:0 100%;
+}
+
+.heart:after{
+    left:0;
+    transform:rotate(-45deg);
+    transform-origin:100% 100%;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.12);}
+}
+
+.enter{
+    margin-top:45px;
+    padding:16px 32px;
+    border:none;
+    border-radius:30px;
+    background:#ff174f;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 0 25px #ff174f;
+    cursor:pointer;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    50%{transform:scale(1.08);}
+}
+
+/* SECOND PAGE */
+#page2{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(circle,#43001e,#12000a 70%);
+}
+
+#page2.active{
+    display:flex;
+}
+
+.photo{
+    width:230px;
+    height:300px;
+    object-fit:cover;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:
+        0 0 20px #ff4f81,
+        0 0 50px #ff174f;
+    transform:rotate(90deg);
+    margin-bottom:20px;
+}
+
+/* MESSAGE SPAM */
+.messages{
+    position:absolute;
+    bottom:-100%;
+    width:100%;
+    text-align:center;
+    animation:scrollMessages 35s linear infinite;
+}
+
+.message{
+    font-size:24px;
+    font-weight:bold;
+    margin:14px 5px;
+    text-shadow:0 0 10px #ff174f;
+}
+
+.emoji{
+    font-size:27px;
+}
+
+@keyframes scrollMessages{
+    from{
+        bottom:-100%;
+    }
+    to{
+        bottom:100%;
+    }
+}
+
+.title{
+    position:absolute;
+    top:15px;
+    font-size:28px;
+    font-weight:bold;
+    text-shadow:0 0 15px #ff174f;
+    z-index:10;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+
+    <div class="heart"></div>
+
+    <button class="enter" onclick="openHeart()">
+        💖 Enter To My Heart 💖
+    </button>
+
+</section>
+
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+
+    <div class="title">❤️ Riya ❤️</div>
+
+    <!-- APNI PHOTO KA NAAM YAHAN RIYA.JPG RAKHNA -->
+    <img src="riya.jpg" class="photo">
+
+    <div class="messages">
+
+        <div class="message">❤️ I Love You Riya ❤️</div>
+        <div class="message">🥰 I Love You Betuu Riya 🥰</div>
+        <div class="message">💖 Love You Riya 💖</div>
+        <div class="message">😘 Kiss You Riya 😘</div>
+        <div class="message">💕 Miss You Riya 💕</div>
+        <div class="message">🫶 Meri Babu Riya 🫶</div>
+        <div class="message">💗 Meri Sona Riya 💗</div>
+        <div class="message">🌸 Meri Sweetheart Riya 🌸</div>
+        <div class="message">🥺 Meri Betuu Riya 🥺</div>
+        <div class="message">💋 Love You So Much Riya 💋</div>
+        <div class="message">❤️ Riya Tum Meri Sab Kuch Ho ❤️</div>
+        <div class="message">😍 Riya Meri Jaan 😍</div>
+        <div class="message">💞 Riya I Miss You 💞</div>
+        <div class="message">😘 Riya Kiss You Babu 😘</div>
+        <div class="message">🫀 Riya Always In My Heart 🫀</div>
+        <div class="message">💖 Riya Meri Sweetheart 💖</div>
+        <div class="message">🥰 Riya Meri Cute Babu 🥰</div>
+        <div class="message">🌹 Riya I Love You Forever 🌹</div>
+        <div class="message">💘 Riya You Are Special 💘</div>
+        <div class="message">❤️❤️ I LOVE YOU RIYA ❤️❤️</div>
+
+        <div class="message">🥰 I Love You Riya 🥰</div>
+        <div class="message">💋 Kiss Kiss Riya 💋</div>
+        <div class="message">💕 My Sweetheart Riya 💕</div>
+        <div class="message">🫶 Meri Babu Riya 🫶</div>
+        <div class="message">💗 Meri Sona Riya 💗</div>
+        <div class="message">❤️ Riya Tumhi Meri Duniya Ho ❤️</div>
+        <div class="message">😍 Love You Riya 😍</div>
+        <div class="message">🥺 Miss You Riya 🥺</div>
+        <div class="message">💖 Forever Love Riya 💖</div>
+        <div class="message">😘 Riya Meri Jaan 😘</div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+function openHeart(){
+
+    document.getElementById("page1").classList.remove("active");
+
+    setTimeout(function(){
+        document.getElementById("page2").classList.add("active");
+    },300);
+
+}
+
+</script>
+
+</body>
+</html>
